@@ -1,0 +1,30 @@
+.findbooks h1{
+    color: white;
+}
+
+.findbooks {
+    height: 100%;
+    text-align: center;
+}
+
+.findbooks .up{
+    top: 0;
+    position:fixed;
+    height:50%;
+    width: 100%;
+    background-color: #6BB77B;
+}
+
+.findbooks .down {
+    bottom: 0;
+    position:fixed;
+    height: 50%;
+    width: 100%;
+    background-color: #D9D2C2;
+    overflow-y: scroll;
+}
+
+.findbooks .button{
+    background-color: green;
+    border-radius: 5px;
+}
