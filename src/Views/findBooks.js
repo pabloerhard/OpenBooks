@@ -3,16 +3,17 @@ import "../css/findBooks.css"
 import axios from "axios";
 import CardBook from "./CardBook";
 import {useNavigate} from "react-router-dom";
-
+require('dotenv').config();
 function FindBooks(){
   const[bookName,setBookName]=useState("")
   const[bookAuthor,setBookAuthor]=useState("")
   const[bookData,setBookData]=useState([])
   const navigate = useNavigate();
+  const apiKey = process.env.GOOGLE_API_KEY;
   const handleSearch = async(event)=>{
     event.preventDefault()
     try{
-      const response = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${bookName}+inauthor:${bookAuthor}&key=AIzaSyBkMX22aklHJDyI81dPxwCtPeKbx5ikP9I`)
+      const response = await axios.get(`GOOGLE_API_KEY`)
       setBookData(response.data.items)
       console.log(response.data)
     }catch (e) {
