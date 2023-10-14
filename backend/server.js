@@ -8,7 +8,7 @@ const dotenv = require('dotenv')
 
 dotenv.config()
 
-mongoose.connect('mongodb+srv://pabloerhard02:mongo02@testcluster.61ydvft.mongodb.net/Node-API?retryWrites=true&w=majority')
+mongoose.connect('MONGOAPI')
   .then(()=>{
     console.log('connected to MongoDB')
   }).catch((error)=>{

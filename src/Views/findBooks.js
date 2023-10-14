@@ -3,6 +3,7 @@ import "../css/findBooks.css"
 import axios from "axios";
 import BookSearch from "./Components/BookSearchResults";
 import {useNavigate} from "react-router-dom";
+<<<<<<< HEAD
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -10,15 +11,19 @@ import { ThemeProvider } from "@mui/material/styles";
 import theme from "../Themes/theme"
 import CssBaseline from '@mui/material/CssBaseline';
 
+=======
+require('dotenv').config();
+>>>>>>> 993219659f516446d228a81dd4f56fa6294856ff
 function FindBooks(){
   const[bookName,setBookName]=useState("")
   const[bookAuthor,setBookAuthor]=useState("")
   const[bookData,setBookData]=useState([])
   const navigate = useNavigate();
+  const apiKey = process.env.GOOGLE_API_KEY;
   const handleSearch = async(event)=>{
     event.preventDefault()
     try{
-      const response = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${bookName}+inauthor:${bookAuthor}&key=AIzaSyBkMX22aklHJDyI81dPxwCtPeKbx5ikP9I`)
+      const response = await axios.get(`GOOGLE_API_KEY`)
       setBookData(response.data.items)
       console.log(response.data)
     }catch (e) {
