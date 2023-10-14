@@ -31,7 +31,7 @@ const CardBook = ({books})=> {
       console.log(e)
     }
   }
-
+  // Redo This code
   return(
     <div className="card m-3" style={{width:"10rem"}}>
           <img className="card-img-top p-3" style={{aspectRatio:"3/2" ,objectFit:"contain"}}

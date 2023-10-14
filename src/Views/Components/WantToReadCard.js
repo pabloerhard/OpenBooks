@@ -3,6 +3,7 @@ const WantToRead = ({book}) => {
 
 
   return(
+
     <div className="card m-3" style={{width:"10rem", background:"#D9D2C2"}}>
       <img className="card-img-top" style={{aspectRatio:"3/2" ,objectFit:"contain"}}
            src={book.bookImage} alt="image"/>

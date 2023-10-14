@@ -29,4 +29,12 @@ router.post('/addbook', async(req,res)=>{
     }
 
   })
+  
+.put('/removeBookFromWantToRead', async (req, res) => {
+  try {
+    
+  } catch (e) {
+    
+  }
+})
 module.exports = router
