@@ -12,8 +12,6 @@ The decision to migrate from Node.js to Gin is driven by several factors:
 
 1. **Performance**: Gin is known for its speed and efficiency, which will lead to faster response times and a more responsive user experience.
 
-2. **Scalability**: As OpenBooks grows, we need a backend that can handle increasing traffic and data. Gin's robust architecture will support our scalability needs.
-
 3. **Maintenance**: Golang's simplicity and strict typing provide greater code stability and ease of maintenance.
 
 4. **Community Support**: Gin has a strong community with active development and a rich ecosystem of plugins and middleware.
@@ -24,10 +22,9 @@ We are currently in the midst of the migration process. The following tasks have
 
 - [x] Initial project setup with Gin.
 - [x] Rewriting API endpoints and routes.
-- [ ] Database migration and data transfer.
-- [ ] Integration of essential middleware and services.
+- [x] Database migration and data transfer.
+- [x] Integration of essential middleware and services.
 - [ ] Testing and quality assurance.
-- [ ] Deployment to production servers.
 
 ## How to Contribute
 
