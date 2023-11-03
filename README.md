@@ -1,7 +1,7 @@
 # OpenBooks WebApp
 
 # OpenBooks WebApp Backend Migration
-
+https://github.com/pabloerhard/OpenBooksGo
 ## Introduction
 
 This repository documents the ongoing backend migration of the OpenBooks WebApp from Node.js to Gin, a Golang web framework. This transition is aimed at improving the performance, scalability, and maintainability of our application.
